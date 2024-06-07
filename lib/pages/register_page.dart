@@ -78,6 +78,17 @@ class _RegisterPageState extends State<RegisterPage> {
                     ),
                   ),
                 ),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.pushNamed(context, '/');
+                  },
+                  child: const Text(
+                    'Iniciar sesion',
+                    style: TextStyle(
+                        color: Colors.blue,
+                        fontSize: 40),
+                  ),
+                )
               ],
             )))),
       ),

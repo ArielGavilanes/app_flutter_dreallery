@@ -23,24 +23,10 @@ class CustomDrawer extends StatelessWidget {
             },
           ),
           ListTile(
-            leading: const Icon(Icons.login),
-            title: const Text('Iniciar sesion'),
+            leading: const Icon(Icons.upload),
+            title: const Text('Subir imagen'),
             onTap: () {
-              Navigator.pushReplacementNamed(context, '/');
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.app_registration_rounded),
-            title: const Text('Registrarse'),
-            onTap: () {
-              Navigator.pushReplacementNamed(context, '/register');
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.info_outline),
-            title: const Text('Acerca de'),
-            onTap: () {
-              Navigator.pushReplacementNamed(context, '/about');
+              Navigator.pushNamed(context, '/upload');
             },
           ),
           ListTile(
